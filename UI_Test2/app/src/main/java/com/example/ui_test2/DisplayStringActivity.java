@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.ui_test1.R;
+
 public class DisplayStringActivity extends AppCompatActivity {
 
     @Override
