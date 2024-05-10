@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
 
-    private  String[]course,desserts;
+    private  String[]courses,desserts;
     private Spinner spCourse,spDesserts;
 
 
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        course=getResources().getStringArray(R.array.courses);
+        courses=getResources().getStringArray(R.array.courses);
         desserts=getResources().getStringArray(R.array.desserts);
 
 
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         ArrayAdapter<String>adpCourse=new ArrayAdapter<>(this,
-                android.R.layout.simple_spinner_dropdown_item,course);
+                android.R.layout.simple_spinner_dropdown_item,courses);
         ArrayAdapter<String>adpDessets=new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_dropdown_item,desserts);
 
