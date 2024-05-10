@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     private EditText opd1 , opd2;
     private TextView output;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,5 +66,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             return;
     }
 }
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+        // 這是一個空的實作，因為我們不需要處理沒有選中項目的情況
+    }
 
 }
