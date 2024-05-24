@@ -70,3 +70,5 @@ public class MainActivity extends AppCompatActivity
         txvOutput.setText("日期"+ year +"/" + (month+1) + "/" + dayOfMonth);
     }
 }
+
+
