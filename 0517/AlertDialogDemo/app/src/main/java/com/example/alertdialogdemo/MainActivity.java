@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
             public void onClick(View v) {
                 new AlertDialog.Builder(MainActivity.this)
                         .setTitle("關於本書")
-                        .setMessage("Android程式設計與應用\n作者:姜睿森\n教師:姜睿森")
+                        .setMessage("Android程式設計與應用\n作者:林郁旋\n教師:林郁旋")
                         .setCancelable(true)
                         .setPositiveButton("確定", null)
                         .show();
@@ -50,7 +50,8 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
                         .setNegativeButton("取消", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                Toast.makeText(MainActivity.this,"按下取消紐",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this,"按下取消紐",
+                                        Toast.LENGTH_SHORT).show();
                             }
                         })
                         .show();
@@ -83,7 +84,8 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
                         .setNegativeButton("取消", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                Toast.makeText(MainActivity.this,"按下取消紐",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this,"按下取消紐",
+                                        Toast.LENGTH_SHORT).show();
                             }
                         })
                         .show();
@@ -96,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
         //    public  void onClick(View v){
         //        new AlertDialog.Builder(MainActivity.this)
         //        .setTitle("請勾選選項")
-        //                .setPositiveButton("Android程式設計與應用\n作者:姜睿森\n教師:姜睿森")
+        //                .setPositiveButton("Android程式設計與應用\n作者: 林郁旋\n教師:林郁旋")
         //                .setNegativeButton(true)
         //                .setMultiChoiceItems("確定", null)
         //                .show();
