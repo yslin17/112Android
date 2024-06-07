@@ -1,6 +1,8 @@
 package com.example.explicitintentdemo2;
 
 
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContract;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,6 +23,14 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView output;
 
+    ActivityResultLauncher launcher = registerForActivityResult(new ResultContract(),
+            new ActivityResultCallback<String>() {
+                @Override
+                public void onActivityResult(String o) {
+                    output.setText("計算結果:" + o);
+                }
+            });
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                launcher.launch(true);
             }
         });
     }
@@ -62,4 +72,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+
+
 
